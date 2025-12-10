@@ -32,7 +32,6 @@ body{
     padding: 0;
     list-style: none;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -44,7 +43,7 @@ body{
     height: auto;
     z-index: -10;
     visibility: visible;
- }
+}
 
 nav ul li a{
     text-decoration: none;
@@ -55,7 +54,6 @@ nav ul li a{
 
 nav ul li:hover{
     background-color: #04D9D9;
-    
 }
 
 .card{
@@ -63,7 +61,8 @@ nav ul li:hover{
     border-radius: 15px;
     padding:2%;
     margin:5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow-x: hidden;
 }
 
 .card h2{
@@ -182,7 +181,7 @@ nav ul li:hover{
 
 .pets-main section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
     padding: 2rem;
 }
