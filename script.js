@@ -1,20 +1,6 @@
-// Welcome message when the page loads
 window.addEventListener("load", function () {
     alert("Welcome to my portfolio!");
 });
-
-// Change About Me text on button click
-// const aboutSection = document.querySelector("#about-me p");
-
-// const changeTextButton = document.createElement("button");
-// changeTextButton.textContent = "Change About Me Text";
-
-// aboutSection.after(changeTextButton);
-
-// changeTextButton.addEventListener("click", function () {
-//     aboutSection.textContent =
-//         "I am a motivated developer constantly learning new technologies and building projects to improve my skills.";
-// });
 
 const aboutParagraph = document.querySelector("#about-me p");
 
@@ -24,7 +10,7 @@ const newText =
 
 let isOriginal = true;
 
-const changeTextButton = document.createElement("button");
+const changeTextButton = document.getElementById("change-text");
 changeTextButton.textContent = "Change About Me Text";
 
 aboutParagraph.after(changeTextButton);
@@ -44,7 +30,7 @@ changeTextButton.addEventListener("click", function () {
 // Show / hide Projects section
 const projectsSection = document.querySelector("#projects");
 
-const toggleProjectsButton = document.createElement("button");
+const toggleProjectsButton = document.getElementById("show-projects");
 toggleProjectsButton.textContent = "Show / Hide Projects";
 
 projectsSection.before(toggleProjectsButton);

@@ -1,38 +1,58 @@
 <!DOCTYPE html>
+<!-- Defines the document type as HTML5 -->
 <html lang="en">
 <head>
+    <!-- Sets responsive behavior for different screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title shown in the browser tab -->
     <title>My Portfolio</title>
+
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Google Fonts connection -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet">
-    
-    
-</head>
-<body>
-    <header class="main-header">
-        <h1>Verónica Martínez Cadavid </h1>
-            <nav>
-                <ul>
-                    <li><a href=#about-me>About Me</a></li>
-                    <li><a href=#projects> Projects</a></li>
-                    <li><a href=#contact>Contact</a></li>
-                    <li><a href="pets.html">Pets</a></li>
-                    
-                </ul>
-            </nav>
 
-        <video id='video' loop autoplay preload muted>
-            <source src='media/sea.mp4' type='video/mp4; codecs='avc1,mp4a'' />
-        </video>    
+    <!-- Homenaje font import -->
+    <link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main header section -->
+    <header class="main-header">
+
+        <!-- Portfolio owner name -->
+        <h1>Verónica Martínez Cadavid</h1>
+
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <!-- Internal navigation links -->
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <!-- External page link -->
+                <li><a href="pets.html">Pets</a></li>
+            </ul>
+        </nav>
+
+        <!-- Background video -->
+        <video id="video" loop autoplay preload muted>
+            <source src="media/sea.mp4" type="video/mp4">
+        </video>
     </header>
 
+    <!-- Main content container -->
     <main class="index-main">
 
+        <!-- About Me section -->
         <section id="about-me" class="card">
             <h2>About Me</h2>
+
+            <!-- Personal description paragraph -->
             <p>
                 I am a bioengineer and a passionate developer with strong knowledge of Python and a genuine enthusiasm for 
                 programming. I enjoy exploring new technologies, continuously learning, and improving my skills through 
@@ -41,24 +61,39 @@
                 international environments. My goal is to keep growing as a developer while contributing to meaningful and 
                 innovative projects.
             </p>
+
+            <!-- Button used to change the paragraph text with JavaScript -->
+            <button id="change-text">Change About Me Text</button>
         </section>
-    
+
+        <!-- Projects section -->
         <section id="projects" class="my_projects">
             <h2>Projects</h2>
 
+            <!-- Button to show or hide projects dynamically -->
+            <button id="show-projects">Show/Hide Projects</button>
+
+            <!-- Projects container -->
             <section class="card-projects">
+
+                <!-- Individual project card -->
                 <section class="project">
                     <h4>Python Exercises</h4>
-                    <a href ="https://github.com/veromarti/ejerciciosPython" target="_blank">
-                        <img src="media/github.svg" alt="Github Logo" 
-                        style="width:42px;height:42px;"></a>
+                    <a href="https://github.com/veromarti/ejerciciosPython" target="_blank">
+                        <img src="media/github.svg" alt="Github Logo" style="width:42px;height:42px;">
+                    </a>
                 </section>
+
+                <!-- Repeated project structure -->
                 <section class="project">
                     <h4>Delivery System</h4>
-                    <a href ="https://github.com/veromarti/programa_domicilio" target="_blank">
-                        <img src="media/github.svg" alt="Github Logo" 
-                        style="width:42px;height:42px;"></a>
+                    <a href="https://github.com/veromarti/programa_domicilio" target="_blank">
+                        <img src="media/github.svg" alt="Github Logo" style="width:42px;height:42px;">
+                    </a>
                 </section>
+
+                <!-- Each project follows the same semantic structure -->
+                <!-- GitHub repository and/or deployed HTML version -->
                 <section class="project">
                     <h4>EcoRide System</h4>
                     <a href ="https://github.com/veromarti/ecoRide" target="_blank">
@@ -182,8 +217,11 @@
             </section>
         </section>
         
+        <!-- Contact section -->
         <section id="contact" class="card">
             <h2>Contact</h2>
+
+            <!-- Contact form -->
             <form>
                 <label>Name</label><br>
                 <input type="text" placeholder="Your name"><br><br>
@@ -194,12 +232,13 @@
                 <label>Message</label><br>
                 <textarea placeholder="Your message"></textarea><br><br>
 
+                <!-- Submit button -->
                 <button type="submit">Send</button>
             </form>
         </section>
     </main>
 
+    <!-- JavaScript file loaded at the end for better performance -->
     <script src="script.js"></script>
 </body>
-    
 </html>
